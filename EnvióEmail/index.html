@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Envios de Emails</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/spinner.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <article>
+        <h1 class="title">Enviar mails</h1>
+        <div class="content">
+            <form action="/" id="formulario">
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Email Destino, ej: mkt@empresa.com">
+                </div>
+                <div>
+                    <label for="cc">CC:</label>
+                    <input type="email" name="cc" id="cc" placeholder="Email Destino, ej: mkt@empresa.com">
+                </div>
+                <div>
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" name="asunto" id="asunto" placeholder="Asunto de Email">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="Mensaje de Email"></textarea>
+                </div>
+                <div class="btns">
+                    <button type="submit" disabled class="opacity">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-send-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4.698 4.034l16.302 7.966l-16.302 7.966a.503 .503 0 0 1 -.546 -.124a.555 .555 0 0 1 -.12 -.568l2.468 -7.274l-2.468 -7.274a.555 .555 0 0 1 .12 -.568a.503 .503 0 0 1 .546 -.124z" /><path d="M6.5 12h14.5" /></svg> 
+                        Enviar
+                    </button>
+
+                    <button type="reset">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-trash"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        Reset
+                    </button>
+                </div>
+            </form>
+            <div id="spinner" class="hidden">
+                <div class="spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                  </div>
+            </div>
+        </div>
+    </article>
+    <script src="js/app.js"></script>
+</body>
+</html>
