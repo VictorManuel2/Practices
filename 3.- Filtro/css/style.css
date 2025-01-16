@@ -2,6 +2,7 @@
     --first-color: #131921;
     --firsr-alpha-color: #232F3E;
     --text-color: #ffffff;
+    --second-color: #F7F7F7;
 }    
 *{
     padding: 0;
@@ -64,16 +65,31 @@ select{
     grid-gap: 1rem;
 }
 .card{
-    border: 1px solid var(--first-color);
+    /* border: 1px solid var(--first-color); */
     padding: 1rem;
+    background-color: var(--second-color);
+}
+.card img{
+    width: 250px;
+    height: 200px;
+    /* object-fit: cover; */
+}
+.condicion{
+    display: block;
+    text-align: right;
 }
 
-
-
-
+.alerta{
+    width: 75vw;
+    background-color: rgb(208, 24, 24);
+    text-align: center;
+    color: var(--text-color);
+    padding: 5px 0;
+    border-radius: 10px;
+}
 
 @media screen and (max-width: 1125px ) {
     #resultado{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }

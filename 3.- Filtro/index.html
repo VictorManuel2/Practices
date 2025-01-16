@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filtro de busqueda</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/spinner.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -36,7 +37,7 @@
                     <option value="Dell">Dell</option>
                     <option value="ASUS">ASUS</option>
                     <option value="Acer">Acer</option>
-                    <option value="LG">LG</option>
+                    <option value="Apple">Apple</option>
                 </select>
             </div>
             <div class="columnas">
@@ -76,8 +77,7 @@
             <div class="columnas">
                 <label for="memoria">Memoria RAM</label>
                 <select name="memoria" id="memoria">
-                    <option value="">Seleccione</option>
-                    <option value="2">2GB</option>
+                    <option value="">Seleccione</option>    
                     <option value="4">4GB</option>
                     <option value="6">6GB</option>
                     <option value="8">8GB</option>
@@ -89,8 +89,8 @@
                 <label for="condicion">Condicion</label>
                 <select name="condicion" id="condicion">
                     <option value="">Seleccione</option>
-                    <option value="nuevo">Nuevo</option>
-                    <option value="reacondicionado">Reacondicionado</option>
+                    <option value="Nuevo">Nuevo</option>
+                    <option value="Reacondicionado">Reacondicionado</option>
                     <option value="Usado">Usado</option>
                 </select>
             </div>
@@ -100,7 +100,7 @@
                     <option value="">Seleccione</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
-                    <option value="3">3 o más</option>
+                    <option value="3">3</option>
                 </select>
             </div>
             <div class="columnas">
@@ -116,38 +116,14 @@
         </div>
         <div class="contenido">
             <div id="resultado">
-                <!-- <div class="cards">
-                    <div class="card">
-                        <div class="info">
-                            <p>Dell pantalla LCD Monitor, puerto HDMI 2, 16GB RAM, 256GB SSD, Wired Keyboard, DP Cord (reacondicionado)</p>
-                            <strong>$4,000</strong>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="info">
-                            <p>Dell pantalla LCD Monitor, puerto HDMI 2, 16GB RAM, 256GB SSD, Wired Keyboard, DP Cord (reacondicionado)</p>
-                            <strong>$4,000</strong>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="info">
-                            <p>Dell pantalla LCD Monitor, puerto HDMI 2, 16GB RAM, 256GB SSD, Wired Keyboard, DP Cord (reacondicionado)</p>
-                            <strong>$4,000</strong>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="info">
-                            <p>Dell pantalla LCD Monitor, puerto HDMI 2, 16GB RAM, 256GB SSD, Wired Keyboard, DP Cord (reacondicionado)</p>
-                            <strong>$4,000</strong>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="info">
-                            <p>Dell pantalla LCD Monitor, puerto HDMI 2, 16GB RAM, 256GB SSD, Wired Keyboard, DP Cord (reacondicionado)</p>
-                            <strong>$4,000</strong>
-                        </div>
-                    </div>   
-                </div> -->
+                <div id="spinner" class="sp-flex hidden">
+                    <div class="sk-folding-cube">
+                        <div class="sk-cube1 sk-cube"></div>
+                        <div class="sk-cube2 sk-cube"></div>
+                        <div class="sk-cube4 sk-cube"></div>
+                        <div class="sk-cube3 sk-cube"></div>
+                      </div>
+                </div>
             </div>
         </div>
     </section>
