@@ -1,6 +1,4 @@
 //Variables
-// const inputNombre = document.querySelector('#nombre-gasto').value;
-// const inputCantidad = document.querySelector('#cantidad').value;
 const formulario = document.querySelector('#form');
 const listadoGastos = document.querySelector('#gastos ul');
 
@@ -8,7 +6,7 @@ let presupuesto;
 let gastos = [];
 
 
-//eventos
+//EVENTOS
 eventListener();
 
 function eventListener(){
@@ -18,16 +16,17 @@ function eventListener(){
 }
 
 
+//FUNCIONES
 
 function agregarPresupuesto(){
-    presupuesto = prompt('¿Cual es su presupuesto?');
+    presupuesto = Number(prompt('¿Cual es su presupuesto?'));
 
     if(presupuesto === '' || presupuesto === null || isNaN(presupuesto) || presupuesto <= 0){
         window.location.reload();
         return;
     }
 
-    mostrarPresupuesto(Number(presupuesto));
+    mostrarPresupuesto(presupuesto);
 }
 
 
@@ -35,7 +34,6 @@ function mostrarPresupuesto(cantidad){
     document.querySelector('#total').textContent = cantidad;
     document.querySelector('#restante').textContent = cantidad;
 
-    console.log(typeof cantidad)
 }   
 
 function agregarGasto(e){
@@ -46,6 +44,9 @@ function agregarGasto(e){
 
     if(nombre === '' || cantidad === ''){
         mostrarAlerta('Los campos son obligatorios', 'error');
+        return;
+    }else if(cantidad <= 0 || isNaN(cantidad)){
+        mostrarAlerta('Cantidad no válida', 'error');
         return;
     }
 
@@ -62,6 +63,12 @@ function agregarGasto(e){
     gastos = [...gastos, gasto];
 
     mostrarGastos(gastos);
+
+    calcularRestastante();
+
+    comprobarPresupuesto(presupuesto);
+
+    formulario.reset();
 }
 function mostrarGastos(gastos){
 
@@ -85,14 +92,50 @@ function mostrarGastos(gastos){
 
        nuevoGasto.appendChild(btnBorrar);
 
-       listadoGastos.appendChild(nuevoGasto)
+       listadoGastos.appendChild(nuevoGasto);
     });
+}
+
+function calcularRestastante(){
+    let gastado = gastos.reduce((total, gasto) => total += Number(gasto.cantidad), 0);
+
+    let restante = presupuesto - gastado;
+    
+
+    document.querySelector('#restante').textContent = restante;
+}
+
+function comprobarPresupuesto(presupuesto){
+    const restante = Number(document.querySelector('#restante').textContent);
+
+    const divRestante = document.querySelector('.restante');
+
+    if((presupuesto / 5) > restante){
+        divRestante.classList.remove('restante-alto');
+        divRestante.classList.add('restante-bajo');
+    }else{
+        divRestante.classList.remove('restante-bajo');
+        divRestante.classList.add('restante-alto')
+    }
+
+    if(restante <= 0){
+        mostrarAlerta('El presupuesto se ha agotado', 'error');
+        formulario.querySelector('button[type="submit"]').disabled = true;
+    }
+
+    if(restante > 0){
+        formulario.querySelector('button[type="submit"]').disabled = false;
+    }
 }
 
 function eliminarGasto(id){
     gastos = gastos.filter( gasto => gasto.id !== id);
 
-    mostrarGastos(gastos)
+    mostrarGastos(gastos);
+
+    calcularRestastante();
+    
+    comprobarPresupuesto(presupuesto);
 }
 
 function limpiarHTML(){
