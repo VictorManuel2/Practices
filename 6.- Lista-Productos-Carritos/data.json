@@ -1,101 +1,289 @@
 [
     {
-       "image": {
-            "thumbnail": "./assets/images/image-waffle-thumbnail.jpg",
-            "mobile": "./assets/images/image-waffle-mobile.jpg",
-            "tablet": "./assets/images/image-waffle-tablet.jpg",
-            "desktop": "./assets/images/image-waffle-desktop.jpg"
-       },
-       "name": "Waffle with Berries",
-       "category": "Waffle",
-       "price": 6.50
+       "image":  "./assets/images/image-waffle-desktop.jpg",
+       "name": "Waffle con Frutos Rojos",
+       "category": "Postres",
+       "price": 50,
+       "id": 1
     },
     {
-        "image": {
-            "thumbnail": "./assets/images/image-creme-brulee-thumbnail.jpg",
-            "mobile": "./assets/images/image-creme-brulee-mobile.jpg",
-            "tablet": "./assets/images/image-creme-brulee-tablet.jpg",
-            "desktop": "./assets/images/image-creme-brulee-desktop.jpg"
-        },
-        "name": "Vanilla Bean Crème Brûlée",
-        "category": "Crème Brûlée",
-        "price": 7.00
+        "image": "./assets/images/image-creme-brulee-desktop.jpg",
+        "name": "Crème Brûlée de Vainilla",
+        "category": "Postres",
+        "price": 65,
+        "id": 2
      },
      {
-        "image": {
-            "thumbnail": "./assets/images/image-macaron-thumbnail.jpg",
-            "mobile": "./assets/images/image-macaron-mobile.jpg",
-            "tablet": "./assets/images/image-macaron-tablet.jpg",
-            "desktop": "./assets/images/image-macaron-desktop.jpg"
-        },
-        "name": "Macaron Mix of Five",
-        "category": "Macaron",
-        "price": 8.00
+        "image": "./assets/images/image-macaron-desktop.jpg",
+        "name": "Mezcla de Cinco Macarrones",
+        "category": "Postres",
+        "price": 42,
+        "id": 3
      },
      {
-        "image": {
-            "thumbnail": "./assets/images/image-tiramisu-thumbnail.jpg",
-            "mobile": "./assets/images/image-tiramisu-mobile.jpg",
-            "tablet": "./assets/images/image-tiramisu-tablet.jpg",
-            "desktop": "./assets/images/image-tiramisu-desktop.jpg"
-        },
-        "name": "Classic Tiramisu",
-        "category": "Tiramisu",
-        "price": 5.50
+        "image": "./assets/images/image-tiramisu-desktop.jpg",
+        "name": "Tiramisu Clasico",
+        "category": "Postres",
+        "price": 55,
+        "id": 4
      },
      {
-        "image": {
-            "thumbnail": "./assets/images/image-baklava-thumbnail.jpg",
-            "mobile": "./assets/images/image-baklava-mobile.jpg",
-            "tablet": "./assets/images/image-baklava-tablet.jpg",
-            "desktop": "./assets/images/image-baklava-desktop.jpg"
-        },
-        "name": "Pistachio Baklava",
-        "category": "Baklava",
-        "price": 4.00
+        "image": "./assets/images/image-baklava-desktop.jpg",
+        "name": "Baklava de Pistacho",
+        "category": "Postres",
+        "price": 45,
+        "id": 5
      },
      {
-        "image": {
-            "thumbnail": "./assets/images/image-meringue-thumbnail.jpg",
-            "mobile": "./assets/images/image-meringue-mobile.jpg",
-            "tablet": "./assets/images/image-meringue-tablet.jpg",
-            "desktop": "./assets/images/image-meringue-desktop.jpg"
-        },
-        "name": "Lemon Meringue Pie",
-        "category": "Pie",
-        "price": 5.00
+        "image": "./assets/images/image-meringue-desktop.jpg",
+        "name": "Tarta de Limón y Merengue",
+        "category": "Postres",
+        "price": 5.00,
+        "id": 6
      },
      {
-        "image": {
-            "thumbnail": "./assets/images/image-cake-thumbnail.jpg",
-            "mobile": "./assets/images/image-cake-mobile.jpg",
-            "tablet": "./assets/images/image-cake-tablet.jpg",
-            "desktop": "./assets/images/image-cake-desktop.jpg"
-        },
-        "name": "Red Velvet Cake",
-        "category": "Cake",
-        "price": 4.50
+        "image": "./assets/images/image-cake-desktop.jpg",
+        "name": "Pastel de Terciopelo Rojo",
+        "category": "Postres",
+        "price": 38,
+        "id": 7
      },
      {
-        "image": {
-            "thumbnail": "./assets/images/image-brownie-thumbnail.jpg",
-            "mobile": "./assets/images/image-brownie-mobile.jpg",
-            "tablet": "./assets/images/image-brownie-tablet.jpg",
-            "desktop": "./assets/images/image-brownie-desktop.jpg"
-        },
-        "name": "Salted Caramel Brownie",
-        "category": "Brownie",
-        "price": 4.50
+        "image": "./assets/images/image-brownie-desktop.jpg",
+        "name": "Brownie de Caramelo Salado",
+        "category": "Postres",
+        "price": 30,
+        "id": 8
      },
      {
-        "image": {
-            "thumbnail": "./assets/images/image-panna-cotta-thumbnail.jpg",
-            "mobile": "./assets/images/image-panna-cotta-mobile.jpg",
-            "tablet": "./assets/images/image-panna-cotta-tablet.jpg",
-            "desktop": "./assets/images/image-panna-cotta-desktop.jpg"
-        },
-        "name": "Vanilla Panna Cotta",
-        "category": "Panna Cotta",
-        "price": 6.50
+        "image": "./assets/images/image-panna-cotta-desktop.jpg",
+        "name": "Panna Cotta de Vainilla",
+        "category": "Postres",
+        "price": 50,
+        "id": 9
+     },
+     {
+        "image": "./assets/images/image-agua-horchata-desktop.webp",
+        "name": "Agua de Horchata",
+        "category": "Bebidas",
+        "price": 25,
+        "id": 10
+     },
+     {
+        "image": "./assets/images/image-agua-kiwi-desktop.webp",
+        "name": "Agua de Kiwi",
+        "category": "Bebidas",
+        "price": 25,
+        "id": 11
+     },
+     {
+        "image": "./assets/images/image-alambre-salchicha-desktop.webp",
+        "name": "Alambre de Salchicha",
+        "category": "Platillos",
+        "price": 50,
+        "id": 12
+     },
+     {
+        "image": "./assets/images/image-bistec-encebollado-desktop.webp",
+        "name": "Bistec Encebollado",
+        "category": "Platillos",
+        "price": 55,
+        "id": 13
+     },
+     {
+        "image": "./assets/images/image-calabacitas-desktop.webp",
+        "name": "Calabacitas Guisadas",
+        "category": "Platillos",
+        "price": 60,
+        "id": 14
+     },
+     {
+        "image": "./assets/images/image-camarones-desktop.jpg",
+        "name": "Camarones al Ajillo",
+        "category": "Platillos",
+        "price": 120,
+        "id": 15
+     },
+     {
+        "image": "./assets/images/image-carne-en-chipotle-desktop.webp",
+        "name": "Carne Desebrada en Chipotle",
+        "category": "Platillos",
+        "price": 75,
+        "id": 16
+     },
+     {
+        "image": "./assets/images/image-ceviche-desktop.jpeg",
+        "name": "Ceviche de Pescado",
+        "category": "Platillos",
+        "price": 125,
+        "id": 17
+     },
+     {
+        "image": "./assets/images/image-chicharron-salsa-verde-desktop.webp",
+        "name": "Chicharrón en Salsa Verde",
+        "category": "Platillos",
+        "price": 60,
+        "id": 18
+     },
+     {
+        "image": "./assets/images/image-chile-relleno-desktop.webp",
+        "name": "Chile Relleno",
+        "category": "Platillos",
+        "price": 80,
+        "id": 19
+     },
+     {
+        "image": "./assets/images/image-chuleta-desktop.webp",
+        "name": "Chuleta",
+        "category": "Platillos",
+        "price": 45,
+        "id": 20
+     },
+     {
+        "image": "./assets/images/image-empanadas-desktop.jpg",
+        "name": "Empanadas",
+        "category": "Platillos",
+        "price": 55,
+        "id": 21
+     },
+     {
+        "image": "./assets/images/image-enfrijoladas-desktop.webp",
+        "name": "Enfrijoladas",
+        "category": "Platillos",
+        "price": 50,
+        "id": 22
+     },
+     {
+        "image": "./assets/images/image-entomatadas-desktop.jpg",
+        "name": "Entomatadas",
+        "category": "Platillos",
+        "price": 50,
+        "id": 23
+     },
+     {
+        "image": "./assets/images/image-entomatado-pollo-desktop.webp",
+        "name": "Entomatado de Pollo",
+        "category": "Platillos",
+        "price": 60,
+        "id": 24
+     },
+     {
+        "image": "./assets/images/image-frambuesa-desktop.webp",
+        "name": "Agua de Frambuesa",
+        "category": "Bebidas",
+        "price": 25,
+        "id": 25
+     },
+     {
+        "image": "./assets/images/image-huevos-rancheros-desktop.jpeg",
+        "name": "Huevos Rancheros",
+        "category": "Platillos",
+        "price": 48,
+        "id": 26
+     },
+     {
+        "image": "./assets/images/image-lasaña-desktop.jpeg",
+        "name": "Lasaña",
+        "category": "Platillos",
+        "price": 85,
+        "id": 27
+     },
+     {
+        "image": "./assets/images/image-limon-menta-desktop.webp",
+        "name": "Agua de Limón con Menta",
+        "category": "Bebidas",
+        "price": 25,
+        "id": 28
+     },
+     {
+        "image": "./assets/images/image-mango-desktop.webp",
+        "name": "Agua de Mango",
+        "category": "Bebidas",
+        "price": 28,
+        "id": 29
+     },
+     {
+        "image": "./assets/images/image-melon-desktop.webp",
+        "name": "Agua de Melón",
+        "category": "Bebidas",
+        "price": 28,
+        "id": 30
+     },
+     {
+        "image": "./assets/images/image-mole-verde-desktop.jpg",
+        "name": "Mole Verde",
+        "category": "Platillos",
+        "price": 65,
+        "id": 31
+     },
+     {
+        "image": "./assets/images/image-naranja-desktop.webp",
+        "name": "Agua de Naranja",
+        "category": "Bebidas",
+        "price": 30,
+        "id": 32
+     },
+     {
+        "image": "./assets/images/image-piña-desktop.webp",
+        "name": "Agua de Piña",
+        "category": "Bebidas",
+        "price": 25,
+        "id": 33
+     },
+     {
+        "image": "./assets/images/image-pollo-con-chorizo-desktop.webp",
+        "name": "Pollo con Chorizo",
+        "category": "Platillos",
+        "price": 55,
+        "id": 34
+     },
+     {
+        "image": "./assets/images/image-pozole-verde-desktop.jpg",
+        "name": "Pozole Verde",
+        "category": "Platillos",
+        "price": 60,
+        "id": 35
+     },
+     {
+        "image": "./assets/images/image-res-salsa-roja-desktop.webp",
+        "name": "Res en Salsa Roja",
+        "category": "Platillos",
+        "price": 70,
+        "id": 36
+     },
+     {
+        "image": "./assets/images/image-sandia-desktop.webp",
+        "name": "Agua de Sandia",
+        "category": "Bebidas",
+        "price": 30,
+        "id": 37
+     },
+     {
+        "image": "./assets/images/image-tamarindo-desktop.webp",
+        "name": "Agua de Tamarindo",
+        "category": "Bebidas",
+        "price": 25,
+        "id": 38
+     },
+     {
+        "image": "./assets/images/image-tostadas-tinga-desktop.webp",
+        "name": "Tostadas de Tinga",
+        "category": "Platillos",
+        "price": 60,
+        "id": 39
+     },
+     {
+        "image": "./assets/images/image-torta-desktop.jpg",
+        "name": "Torta de Carnitas",
+        "category": "Platillos",
+        "price": 35,
+        "id": 40
+     },
+     {
+        "image": "./assets/images/image-tacos-dorados-desktop.jpg",
+        "name": "Tacos Dorados",
+        "category": "Platillos",
+        "price": 55,
+        "id": 41
      }
 ]

@@ -22,18 +22,67 @@ body{
     background-color: var(--Rose-50);
     width: 100%;
 }
-.container{
-    max-width: 1200px;
-    padding: 4rem 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-}
-.content{
+.content-header{
     width: 100%;
+    height: 140px;
+    padding: 0 2rem;
+    background-color: var(--Rose-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
-.list-product-text{
+.content-header img{
+    width: 140px;
+    object-fit: cover;
+}
+.name-local{
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--Red);
+    font-family: cursive;
+}
+.container{
+    max-width: 1280px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+.categories{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.categories button{
+    background-color: transparent;
+    padding: .8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: var(--Rose-900);
+    font-weight: 700;
+    font-size: 20px;
+    border: 1px solid var(--Rose-500);
+}
+.categories .btn-select{
+    background-color: var(--Red);
+    padding: .8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 20px;
+}
+.content-product{
+    display: flex;
+    gap: 2rem;
+}
+.product-content-right{
+    width: 85%;
+}
+
+.category-name{
     font-size: 32px;
     margin-bottom: 1rem;
     color: var(--Rose-900);
@@ -51,12 +100,13 @@ body{
     border-radius: 10px;
 }
 .card-product-img button{
+    width: 80%;
     position: absolute;
-    left: 57px;
-    bottom: -15px;
+    left: 50%;
+	bottom: 0;
+    transform: translate(-53%, 30%);
     background-color: var(--white);
-    border: none;
-    border: 2px solid var(--Rose-300);
+    border: 2px solid var(--Rose-500);
     padding: .5rem 1rem;
     display: flex;
     justify-content: center;
@@ -66,6 +116,12 @@ body{
     cursor: pointer;
     border-radius: 50px;
     color: var(--Rose-900);
+    transition: background-color 0.3s ease-in;
+}
+.card-product-img button:hover{
+    background-color: var(--Rose-100);
+    color: var(--Red);
+    border: 2px solid var(--Red);
 }
 .card-product-info{
     padding: 1rem 0;
