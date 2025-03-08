@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator de codigo QR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="content-code-generator">
+        <section class="qr-code-generator">
+            <div class="left">
+                <h1 class="code-generator-title">Generador de <span>CODIGO QR</span></h1>
+            </div>
+            <div class="right">
+                <form action="#" id="qr-form">
+                    <h2 class="qr-form-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3965e4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                            <path d="M7 17l0 .01" />
+                            <path d="M14 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                            <path d="M7 7l0 .01" />
+                            <path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                            <path d="M17 7l0 .01" />
+                            <path d="M14 14l3 0" />
+                            <path d="M20 14l0 .01" />
+                            <path d="M14 14l0 3" />
+                            <path d="M14 20l3 0" />
+                            <path d="M17 17l3 0" />
+                            <path d="M20 17l0 3" />
+                        </svg>
+                        Codigo QR
+                    </h2>
+                    <div class="qr-form-input">
+                        <label for="url" class="sr-only">Introduce la URL</label>
+                        <input type="url" name="url" id="url" placeholder="Introduce la URL">
+                        <button type="submit">Generar</button>
+                    </div>
+                </form>
+                <div id="result" class="result">
+                    <a href="" download="" class="download">Descargar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>​​
+
+    <script src="js/app.js"></script>   
+</body>
+</html>
